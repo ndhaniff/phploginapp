@@ -18,7 +18,7 @@ $hash = $mysqli->escape_string(md5(rand(0,1000)));
 
 
 //query the db for checking user already exist or not
-$result = $mysqli->query('SELECT * FROM users WHERE email = "$email"') or die($mysqli->error);
+$result = $mysqli->query("SELECT * FROM users WHERE email='".$email."'") or die($mysqli->error);
 
 //if table row > 0 = user allready exist
 if ($result->num_rows > 0){
