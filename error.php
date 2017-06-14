@@ -9,6 +9,7 @@ session_start();
 	 <?php 
 	 if (isset($_SESSION['message']) AND !empty($_SESSION['message'])){
 	 	echo "<p>".$_SESSION['message']."</p>";
+	 	echo "<a href='index.php'>kembali </a>";
 	 }
 	 else {
 	 	header('location: index.php');

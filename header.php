@@ -23,13 +23,13 @@ require './inc/db.php'
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">PhpLoginApp</a>
+          <a class="navbar-brand" href="#" id="brand">PhpLoginApp</a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#login">Login</a></li>
-            <li><a href="#register">Register</a></li>
+            <li><a href="#" id="home">Home</a></li>
+            <li><a href="#login" id="logintab">Login</a></li>
+            <li><a href="#register" id="registertab">Register</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
