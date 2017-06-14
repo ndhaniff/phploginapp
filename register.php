@@ -33,7 +33,7 @@ else if ($result->num_rows == 0) {
 	if($mysqli->query($sql)){
 		$_SESSION['active'] = 0;
 		$_SESSION['logged_in'] = true;
-		$_SESSION['message'] = 'Link konfirmasi telah dihantar ke $email anda';
+		$_SESSION['message'] = 'Link konfirmasi telah dihantar ke '.$email.' anda';
 
 	//send to verify.php
 	$to = $email;
@@ -47,7 +47,7 @@ else if ($result->num_rows == 0) {
 
 	mail($to,$subject,$message_body);
 
-	header('location: profile.php');
+	header('location: verify.php');
 	}
 	else{
 		$_SESSION['message'] = "Pendaftaran Gagal";

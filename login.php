@@ -16,7 +16,6 @@ else{
 	$_SESSION['last_name'] = $pengguna['last_name'];
 	$_SESSION['email'] = $pengguna['email'];
 	$_SESSION['active'] = $pengguna['active'];
-	$_SESSION['login'] = $pengguna['login'];
 
 	header('location: profile.php');
 }
